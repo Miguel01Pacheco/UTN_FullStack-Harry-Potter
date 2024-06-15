@@ -1,0 +1,123 @@
+.cont-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 640px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gri {
+    background:radial-gradient(circle, orange,orangered);
+    border:none;
+    width: 0px;
+    height: 100%;
+    padding: 5%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: flex-grow 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.gri img {
+    width: 350px;;
+    height: 350px;
+    margin-bottom: 5%;
+}
+.cont-img .gri:hover  {
+    cursor:crosshair;
+    flex-grow: 3;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.sli{
+    background:radial-gradient(circle, rgb(82, 227, 82),green);
+    border: none;
+    width: 0px;
+    height: 100%;
+    padding: 5%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: flex-grow 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.sli img {
+    width: 350px;;
+    height: 350px;
+    margin-bottom: 5%;
+}
+.cont-img .sli:hover  {
+    cursor:crosshair;
+    flex-grow: 3;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.rav {
+    background:radial-gradient(circle,rgb(0, 85, 255),blue);
+    border: none;
+    width: 0px;
+    height: 100%;
+    padding: 5%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: flex-grow 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+}
+.rav img {
+    width: 350px;;
+    height: 350px;
+    margin-bottom: 5%;
+}
+.cont-img .rav:hover  {
+    cursor:crosshair;
+    flex-grow: 3;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.huf {
+    background:radial-gradient(circle,yellow,rgb(255, 234, 0));
+    border: none;
+    width: 0px;
+    height: 100%;
+    padding: 5%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: flex-grow 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.huf img {
+    width: 350px;;
+    height: 350px;
+    margin-bottom: 5%;
+}
+.cont-img .huf:hover  {
+    cursor:crosshair;
+    flex-grow: 3;
+    opacity: 1;
+    filter: contrast(120%);
+}
