@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 900px;
+    max-width: 750px;
     height: 640px;
     margin: auto;
     overflow: hidden;
@@ -30,6 +30,7 @@
     height: 350px;
     margin-bottom: 5%;
 }
+
 .cont-img .gri:hover  {
     cursor:crosshair;
     flex-grow: 3;
@@ -120,4 +121,26 @@
     flex-grow: 3;
     opacity: 1;
     filter: contrast(120%);
+}
+@media  (max-width:500px) {
+    .cont-img {
+        width: 350px;
+        height: 550px;
+    }
+    .gri img  {
+        width: 200px;
+        height: 200px;
+    }
+    .sli img  {
+        width: 200px;
+        height: 200px;
+    }
+    .rav img  {
+        width: 200px;
+        height: 200px;
+    }
+    .huf img  {
+        width: 200px;
+        height: 200px;
+    }
 }
