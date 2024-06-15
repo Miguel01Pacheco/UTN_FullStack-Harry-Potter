@@ -1,6 +1,7 @@
 const $casas = document.getElementById("houses");
 $casas.innerHTML = `
 <div class="cont-img">
+
 <p class="gri"> <img src="assets/gryffindor-sin-fondo.png">
 Gryffindor es confortable, con paredes rojas y doradas, decorada con trofeos y retratos de valientes hechiceros.</p>
      <p class="sli"> <img src="assets/slytherin-sin-fondo.png">
