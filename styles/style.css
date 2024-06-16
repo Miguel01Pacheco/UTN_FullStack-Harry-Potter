@@ -158,3 +158,19 @@ body {
     width: 100%;
     bottom: 0;
   }
+  /* Estilos boton*/
+  .back-to-top {
+    position: fixed;
+    bottom: 100px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; 
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}

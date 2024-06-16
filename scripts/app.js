@@ -82,3 +82,18 @@ let contenidoHtml =[];
 //Muestro en pantalla las cartas
 $grid.innerHTML = contenidoHtml;   
   });
+  //Referencio mi boton para subir.
+const $backToTopButton = document.getElementById("back-to-top");  
+  // Mostrar/ocultar botón al hacer scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) { // Mostrar el botón después de 300px de desplazamiento
+      $backToTopButton.style.display = 'block';
+  } else {
+      $backToTopButton.style.display = 'none';
+  }
+});
+
+// Volver al principio de la página al hacer clic en el botón
+$backToTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
