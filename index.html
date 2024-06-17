@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio - Proyecto Harry Potter</title>
     <link rel="icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/inicio.css" />
   </head>
@@ -18,17 +21,22 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-inicio">
       <section class="intro">
         <h1>Bienvenidos al Mundo de Harry Potter</h1>
         <p>
           En este sitio encontrarás información detallada sobre el universo de
           Harry Potter, incluyendo personajes, casas, hechizos y mucho más.
         </p>
+        <div class="cont-botones" id="cont-botones">
+          <a href="#houses">casas</a>
+          <a href="#hechizos">hechizos</a>
+          <a href="pages/personajes.html">personajes</a>
+        </div>
       </section>
-      <section id="houses">
+      <section id="houses" class="houses">
       </section>
-      <section id="hechizos"></section>
+      <section id="hechizos" class="hechizos"></section>
     </main>
 
     <footer>
