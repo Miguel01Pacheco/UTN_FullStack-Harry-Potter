@@ -86,7 +86,7 @@ $grid.innerHTML = contenidoHtml;
 const $backToTopButton = document.getElementById("back-to-top");  
   // Mostrar/ocultar botón al hacer scroll
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) { // Mostrar el botón después de 300px de desplazamiento
+  if (window.scrollY > 250) { // Mostrar el botón después de 300px de desplazamiento
       $backToTopButton.style.display = 'block';
   } else {
       $backToTopButton.style.display = 'none';

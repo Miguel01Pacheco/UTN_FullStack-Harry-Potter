@@ -1,40 +1,42 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personajes - Proyecto Harry Potter</title>
+    <title>Hechizos - Proyecto Harry Potter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/personajes.css" />
+    <link rel="stylesheet" href="../styles/houses.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="personajes.html">Personajes</a></li>
-          <li><a href="houses.html">Casas</a></li>
-          <li><a href="hechizos.html">Hechizos</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="houses.html">Casas</a></li>
+            <li><a href="hechizos.html">Hechizos</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="characters">
-        <h1>Personajes</h1>
-        <div class="grid">
-          <!-- Aquí se insertarán las tarjetas de los personajes dinámicamente -->
+      <section class="houses" id="houses">
+        <h1>Casas</h1>
+        <div class="grid-casas" id="grid-casas">
+          <!-- Aquí se insertarán las tarjetas de las casa dinámicamente -->
         </div>
-        <button id="back-to-top" class="back-to-top">Subir</button>
+        <button id="subir-casas" class="subir-casas">Subir</button>
       </section>
     </main>
 
     <footer>
       <p>&copy; 2024 Proyecto Harry Potter. Todos los derechos reservados.</p>
     </footer>
-    <script  src= "../scripts/personajes.js"></script>
+    <script  src= "../scripts/houses.js"></script>
   </body>
 </html>

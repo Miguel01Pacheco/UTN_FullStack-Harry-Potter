@@ -1,0 +1,160 @@
+
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body {
+      
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 1em 0;
+      width: 100%;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    
+    nav ul li {
+      margin: 0 1em;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    main {
+      padding: 2em;
+      text-align: center;
+      background-image: url(../assets/fondoLibro.jpg);
+      background-size: 100%;
+    } 
+    .houses {
+        max-width: max-content;
+        margin: 0px auto 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    } 
+    .houses h1 {
+        width:80% ;
+        text-align: center;
+        border: 1px solid #343a40;
+        background:radial-gradient(circle,#5c6064,#343a40);
+        padding: 10px 5px;
+        border: #343a40 5px solid;
+        border-radius: 15px;
+        box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
+        margin-bottom: 15px;
+    } 
+    .grid-casas {
+        width: max-content;
+        height: max-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5vh;
+    }
+    .div-Gryffindor {
+        width: 60vh;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
+        background:radial-gradient(circle, orange,orangered);
+    }
+    .Gryffindor, .Slytherin, .Ravenclaw, .Ravenclaw {
+        width:80% ;
+        text-align: center;
+        border: 1px solid #343a40;
+        background:radial-gradient(circle,#5c6064,#343a40);
+        padding: 10px 5px;
+        border: #343a40 5px solid;
+        border-radius: 15px;
+        box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
+    }
+    .img-G, .img-S, .img-R, .img-H {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .p-G, .p-S, .p-R, .p-H {
+        width: 80%;
+        padding: 10px;
+    }
+    .div-Slytherin {
+        width: 60vh;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
+        background:radial-gradient(circle, rgb(82, 227, 82),green);
+       
+    }
+    .div-Ravenclaw {
+        width: 60vh;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
+        background:radial-gradient(circle,rgb(0, 85, 255),blue);
+    }
+    .div-Hufflepuff {
+        width: 60vh;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
+        background:radial-gradient(circle,yellow,rgb(255, 234, 0));
+    }
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+/* Estilos boton*/
+.subir-casas {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color:#343a40;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; 
+}
+
+.subir-casas:hover {
+    background-color: #555;
+}

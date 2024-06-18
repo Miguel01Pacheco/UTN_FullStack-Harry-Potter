@@ -172,6 +172,7 @@ body {
   }
   /* Estilos boton*/
   .back-to-top {
+    display: none;
     position: fixed;
     bottom: 100px;
     right: 50px;

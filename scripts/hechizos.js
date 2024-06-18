@@ -25,7 +25,7 @@ hechizos.forEach((hechizo) => {
   const $subirHechizos = document.getElementById("subir-hechizos");  
   // Mostrar/ocultar botón al hacer scroll
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) { // Mostrar el botón después de 300px de desplazamiento
+  if (window.scrollY > 250) { // Mostrar el botón después de 300px de desplazamiento
       $subirHechizos.style.display = 'block';
   } else {
       $subirHechizos.style.display = 'none';

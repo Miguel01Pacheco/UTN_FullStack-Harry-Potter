@@ -1,169 +1,91 @@
+
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body {
+      
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 1em 0;
+      width: 100%;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    
+    nav ul li {
+      margin: 0 1em;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
 .main-inicio {
-    background-image:url(../assets/fondoLibro.jpg);
+    padding: 2em;
+    text-align: center;
+    background-image: url(../assets/fondoLibro.jpg);
     background-size: 100%;
-    box-sizing: border-box;
 }
 
 .intro {
     max-width: 800px;
-    margin: 20vh auto 20vh;
-    height: 30vh;
+    margin: 10vh auto 10vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: azure;
     border: 2px azure solid;
     box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
     border-radius: 15px;
-    opacity: .8;
+    opacity: .7;
+  }
+  .intro h1 {
+    font-size: 40px;
   }
   .intro p {
+    font-size: 24px;
     margin:20px ;
   }
   /*Botones de navegacion*/
   .cont-botones {
     margin: 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    gap: 35px;
   }
   .cont-botones a {
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 10px 15px;
     border: 2px azure solid;
     box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
     border-radius: 15px;
+    font-size: 20px;
   }
-  .houses {
-    height: 80vh;
-    width: 100%;
-    margin-bottom: 40px;
-    border: 2px azure solid;
-    box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
-    border-radius: 15px;
+  .cont-botones a:hover {
+    background-color: antiquewhite;
   }
-  .hechizos {
-    height: 90vh;
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
     width: 100%;
-    margin :40px 0px;
-
+    bottom: 0;
   }
-.cont-img {
-    display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    justify-content: center;
-    align-items: top;
-    padding: 5%;
-    width: 100%;
-    height:100%;
-}
 
-.gri {
-    background:radial-gradient(circle, orange,orangered);
-    border:none;
-    width: 200px;
-    height: 300px;
-    padding: 5%;
-    transition: .2s ease;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-}
-.gri img {
-    width: 150px;;
-    height: 150px;
-    margin-bottom: 5%;
-}
-
-.cont-img .gri:hover  {
-    transform: scale(1.1);
-}
-
-.sli{
-    background:radial-gradient(circle, rgb(82, 227, 82),green);
-    border:none;
-    width: 200px;
-    height: 300px;
-    padding: 5%;
-    transition: .2s ease;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-}
-.sli img {
-    width: 150px;;
-    height: 150px;
-    margin-bottom: 5%;
-}
-.cont-img .sli:hover  {
-    transform: scale(1.1);
-}
-
-.rav {
-    background:radial-gradient(circle,rgb(0, 85, 255),blue);
-    border:none;
-    width: 200px;
-    height: 300px;
-    padding: 5%;
-    transition: .2s ease;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-
-}
-.rav img {
-    width: 150px;;
-    height: 150px;
-    margin-bottom: 5%;
-}
-.cont-img .rav:hover  {
-  transform: scale(1.1);
- }
-
-.huf {
-    background:radial-gradient(circle,yellow,rgb(255, 234, 0));
-    border: none;
-    width: 200px;
-    height: 300px;
-    padding: 5%;
-    border-radius: 15px;
-    transition:  0.2s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-}
-.huf img {
-    width: 150px;;
-    height: 150px;
-    margin-bottom: 5%;
-}
-.cont-img .huf:hover  {
-    transform: scale(1.1);
- }
-@media  (max-width:500px) {
-    .cont-img {
-        width: 350px;
-        height: 550px;
-    }
-    .gri img  {
-        width: 200px;
-        height: 200px;
-    }
-    .sli img  {
-        width: 200px;
-        height: 200px;
-    }
-    .rav img  {
-        width: 200px;
-        height: 200px;
-    }
-    .huf img  {
-        width: 200px;
-        height: 200px;
-    }
-}
