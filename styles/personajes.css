@@ -58,6 +58,15 @@ body {
     border-radius: 15px;
     box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
   }
+  .search {
+    width:60% ;
+    padding: 10px 5px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: #343a40 5px solid;
+    font-size: 20px;
+
+  }
   /* Estilos grilla y cards de personajes*/
   .grid {
     background-color: #343a40;

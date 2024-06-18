@@ -1,5 +1,7 @@
 //Referencio el div de mi HTML necesario para agregar mi contenido dinámico.
 const $grid = document.querySelector(".grid");
+//Referencio el imput para buscar personajes.
+const $input =document.getElementById("search");
 //Funcion para poner "Si" en caso de true o "No"en caso de false.
 function esMago(valor){
     if(valor){
@@ -18,8 +20,7 @@ function imageOk(valor,valor2){
       return "../assets/genericaDefault.jpeg"
     }
 
-        return valor;
-    
+        return valor;    
 }
 //Funcion para cambiar de clase segun la casa del personaje.
 function house(valor){
@@ -79,8 +80,32 @@ let contenidoHtml =[];
       </div>
       `;
     });
+console.log(contenidoHtml);    
 //Muestro en pantalla las cartas
-$grid.innerHTML = contenidoHtml;   
+//Como el contenido se guarda como un solo string puedo renderizarlo sin un bucle
+$grid.innerHTML = contenidoHtml; 
+//Filtrado de personajes
+$input.addEventListener("keyup", () => {
+  const filtro = $input.value.toLowerCase();
+  const personajesFiltrados = personajes.filter(personaje => 
+      personaje.name.toLowerCase().includes(filtro)
+  );
+console.log(personajesFiltrados); 
+//Bucle para iterar mi array de personajes
+contenidoHtml ="";
+personajesFiltrados.forEach((personaje) => {
+  contenidoHtml +=
+ `<div class= "card">
+  <h1 class="titulo">${personaje.name}</h1>
+  <img  class="image" src="${imageOk(personaje.image,personaje.gender)}" alt="imagen de ${personaje.name}">
+  <p class = "${house(personaje.house)}" > ${house(personaje.house)}</p>
+  <p  class =${ancestry(personaje.ancestry)}>${ancestry(personaje.ancestry)}</p>
+  <p class ="wizard">${esMago(personaje.wizard)}</p>
+  </div>
+  `;
+}); 
+$grid.innerHTML = contenidoHtml;  
+})  
   });
   //Referencio mi boton para subir.
 const $backToTopButton = document.getElementById("back-to-top");  
