@@ -98,7 +98,8 @@ border-radius: 15px;
 
 } 
 .titulo-card-hechizo {
-    width: 80%;        
+    width: 80%;  
+    text-wrap: wrap;      
     border: 1px solid #343a40;
     background:radial-gradient(circle,#5c6064,#343a40);
     padding: 5px 5px;
