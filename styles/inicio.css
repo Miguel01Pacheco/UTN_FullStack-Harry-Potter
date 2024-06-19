@@ -79,6 +79,23 @@
   .cont-botones a:hover {
     background-color: antiquewhite;
   }
+  @media (max-width :570px){
+    .cont-botones {
+      margin: 10px;
+      gap: 5px;
+    }
+    .intro h1 {
+      font-size: 30px;
+    }
+    .intro p {
+      font-size: 16px;
+      margin:5px ;
+    }
+    .cont-botones a {
+      font-size: 16px;
+      padding: 5px 10px;
+    }
+  }
   footer {
     background-color: #343a40;
     color: white;
