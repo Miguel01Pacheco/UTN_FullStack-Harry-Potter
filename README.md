@@ -43,7 +43,8 @@ Este proyecto consiste en una aplicación web sobre Harry Potter que utiliza una
 
 ## API Utilizada
 
-- **Harry Potter API**: [https://harry-potter-api.onrender.com](https://harry-potter-api.onrender.com)
+- **Harry Potter API**: ["https://harry-potter-api.onrender.com"]("https://harry-potter-api.onrender.com")
+
                       : ["https://hp-api.onrender.com/api/characters"]("https://hp-api.onrender.com/api/characters")
     - Endpoints utilizados:
         - `/api/characters` para obtener la lista de personajes.
