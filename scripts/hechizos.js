@@ -1,5 +1,6 @@
 const url = "https://harry-potter-api.onrender.com/hechizos";
 const $gridHechizos = document.getElementById("grid-hechizos");
+const $inputH = document.getElementById("searchH");
 
 fetch(url)
 	.then((res) => res.json())
@@ -7,8 +8,6 @@ fetch(url)
 	
 let hechizos = data;
 console.log(hechizos);
-//Variable para guardar el contenido a mostrar.
-//const contenidoHechizos = [];
 
 hechizos.forEach((hechizo) => {
     $gridHechizos.innerHTML +=
@@ -19,6 +18,25 @@ hechizos.forEach((hechizo) => {
     </div>
     `   
     });
+//Filtrado de hechizos
+$inputH.addEventListener("keyup", () => {
+  const filtro = $inputH.value.toLowerCase();
+  const hechizosFiltrados = hechizos.filter(hechizo => 
+      hechizo.hechizo.toLowerCase().includes(filtro))
+   
+//Renderizado luego del filtro.
+$gridHechizos.innerHTML = "";  
+
+  hechizosFiltrados.forEach((hechizo) => {
+    $gridHechizos.innerHTML +=
+    `<div class="cards-hechizos">
+    <h2 class="titulo-card-hechizo">${hechizo.hechizo}</h2>
+    <p class="numero-card-hechizo">#${hechizo.id}</p>
+    <p class="contenido-card-hechizo">${hechizo.uso}</p>
+    </div>
+    `     
+    });
+  }); 
 });
 	
  //Referencio mi boton para subir.
